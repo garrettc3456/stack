@@ -1,0 +1,9 @@
+<h2>Add a comment</h2>
+<!-- make a new simple form for the two variable. Since its nested, it follows the url-->
+<%= simple_form_for [@story, @comment] do |form| %>
+
+	<%= form.input :body, label: "Your Comment" %>
+
+	<%= form.button :submit, "Save" %>
+
+<% end %>
